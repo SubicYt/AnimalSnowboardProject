@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html,body{
+        position: relative;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #83bbb3, #3913e4, #48bff6, #066b8a);
+      background-repeat: no-repeat;
+      background-size: 400% 400%; /* make the background 4 times larger than the container */
+      animation: gradient 10s ease infinite; /* animate the background using the gradient animation */
+      height: 100%;
+      width:100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; 
+      overflow-x: hidden;
+      }
+      
+      @keyframes gradient {
+        0% {
+      background-position: 0% 50%;
+        }
+        50% {
+      background-position: 100% 50%;
+        }
+        100% {
+      background-position: 0% 50%;
+        }
+        }
+        .AnimalMain{
+        text-align: center;
+        margin-top: 12px;
+        font-size: 50px;
+        font-weight: bold;
+        }
+        .Title{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-decoration: underline;
+          font-size:65px;
+          margin-bottom: 35px;
+        }
+        .Desc,.Slogan{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-style: italic;
+          font-size:30px;
+            margin-top: 0;
+        }
+        .Title:hover{
+            color:#260749;
+        }
+        .logo{
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        
+        .learnMore{
+        background-color:rgb(28, 46, 145);
+    color: black;
+    height:50px;
+    width:200px;
+    border:none;
+    font-weight:bolder;
+    font-size:25px;
+    cursor:pointer;
+    border-radius:8px;
+    transition:background-color 0.5s;
+    transition:opacity 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 19px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    }
+    .learnMore:hover{
+        opacity: 0.6;
+    }
+
+    .Slogan {
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+     
+    </style>
+</head>
+<body>
+    <div class="AnimalMain">
+        <p class="Title">ANIMAL SNOWBOARDS</p>
+        <p class="Slogan">WE RIDE WILD</p>
+        <p class="Desc">THE EASIEST WAY TO WAX A SNOWBOARD</p>
+        <form action="InfoPage.html">
+            <button class="learnMore">LEARN MORE</button>
+        </form>
+    </div>
+    <img class="logo" src="Logo1.png">
+    
+    
+</body>
+</html>
